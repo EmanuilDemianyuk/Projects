@@ -1,0 +1,8 @@
+.wrapper {
+    min-height: 100vh;
+}
+
+[class*="__container"] {
+    width: min(calc(100% - 2rem)), 73.75rem;
+    margin-inline: auto;
+}
