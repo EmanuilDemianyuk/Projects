@@ -1,3 +1,48 @@
-header {
-    
+.header {
+    background-color: $headerBG;
+    // .header__up
+
+    &__up {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // .header__contacts
+
+    &__contacts {
+        display: flex;
+        align-items: center;
+        img:first-child {
+            height: 12px;
+            width: 16px;
+            object-fit: cover;
+        }
+        img:last-child {
+            height: 14px;
+            width: 15px;
+            object-fit: cover;
+        }
+        p {
+            color: $tx-white ;
+        }
+    }
+
+    // .header__icon
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        gap: 1.125rem;
+        img {
+            width: 15px;
+            height: 15px;
+            object-fit: cover;
+        }
+    }
+
+    // .header__down
+
+    &__down {
+    }
 }

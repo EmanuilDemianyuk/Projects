@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&family=Open+Sans:wght@400;500;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: inherit;
+  font-weight: inherit;
+}
+
+ol,
+ul,
+li {
+  list-style-type: none;
+}
+
+[class*=__container] {
+  max-width: 73.75rem;
+  margin-inline: auto;
+}
+
+.header {
+  background-color: #18154B;
+}
+.header__up {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__contacts {
+  display: flex;
+  align-items: center;
+}
+.header__contacts img:first-child {
+  height: 12px;
+  width: 16px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.header__contacts img:last-child {
+  height: 14px;
+  width: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.header__contacts p {
+  color: white;
+}
+.header__icon {
+  display: flex;
+  align-items: center;
+  gap: 1.125rem;
+}
+.header__icon img {
+  width: 15px;
+  height: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main {
+  flex: 1 1 auto;
+}/*# sourceMappingURL=me.css.map */
