@@ -1,3 +1,6 @@
-h1 {
-    background-color: aqua;
-}
+@import "reset";
+@import "mixins";
+
+@import "header";
+@import "main";
+@import "footer";
