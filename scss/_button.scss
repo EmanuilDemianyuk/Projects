@@ -1,0 +1,17 @@
+button:link {
+    transition: 0.2s;
+    background: linear-gradient(73.56deg, #0D748B -10.13%, #1A0B73 75.49%), #FFFFFF;
+}
+button:visited {
+    transition: 0.2s;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(73.56deg, #0D748B -10.13%, #1A0B73 75.49%);
+}
+button:hover {
+    transition: 0.2s;
+    background: linear-gradient(73.56deg, #0D748B -10.13%, #1A0B73 75.49%), #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(26, 11, 115, 0.4);
+}
+button:active {
+    transition: 0.2s;
+    background: linear-gradient(0deg, rgba(24, 21, 75, 0.6), rgba(24, 21, 75, 0.6)), linear-gradient(73.56deg, #0D748B -10.13%, #1A0B73 75.49%);
+}

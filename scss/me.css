@@ -9,11 +9,18 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: #F5F5F5;
+  font-family: "Nunito Sans";
+  font-style: normal;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+button {
+  cursor: pointer;
 }
 
 h1,
@@ -37,32 +44,16 @@ li {
   margin-inline: auto;
 }
 
-.header {
-  background-color: #18154B;
-}
 .header__up {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 2.875rem;
+  background-color: #18154B;
 }
 .header__contacts {
   display: flex;
-  align-items: center;
-}
-.header__contacts img:first-child {
-  height: 12px;
-  width: 16px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.header__contacts img:last-child {
-  height: 14px;
-  width: 15px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.header__contacts p {
-  color: white;
+  gap: 2.75rem;
 }
 .header__icon {
   display: flex;
@@ -70,11 +61,155 @@ li {
   gap: 1.125rem;
 }
 .header__icon img {
-  width: 15px;
-  height: 15px;
+  width: 1.25rem;
+  height: 1.25rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
+.contacts__items {
+  display: flex;
+  align-items: center;
+}
+.contacts__items img:first-child {
+  height: 0.8125rem;
+  width: 1rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.contacts__items p {
+  color: #F0F5FB;
+  font-family: "Nunito Sans";
+  font-style: normal;
+}
+
+.header__down {
+  background-color: white;
+  height: 4.375rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.375rem;
+  color: rgb(48, 50, 57);
+}
+.menu__items {
+  flex: 0;
+}
+.menu__items select {
+  outline: inherit;
+  border: inherit;
+  color: rgb(48, 50, 57);
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.375rem;
+  cursor: pointer;
+}
+.menu__items select:hover {
+  transition: 0.2s;
+  color: rgba(48, 50, 57, 0.7);
+}
+.menu__items button {
+  color: white;
+  width: 160px;
+  height: 40px;
+  background: linear-gradient(73.56deg, #0D748B -10.13%, #1A0B73 75.49%), #FFFFFF;
+  border-radius: 50px;
+  border: none;
+}
+.menu__items:hover {
+  color: rgba(48, 50, 57, 0.7);
+  transition: 0.2s;
+}
+
+.menu__icon {
+  display: flex;
+  gap: 10px;
+}
+.menu__icon__search {
+  flex: 0;
+}
+.menu__icon__search img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.menu__icon__favorites {
+  flex: 0;
+}
+.menu__icon__favorites img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.menu__icon__basket {
+  flex: 0;
+}
+.menu__icon__basket img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.elements_1,
+.elements_2 {
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  background-color: #18154B;
+  color: white;
+}
+
+.elements_1 {
+  position: relative;
+  bottom: 0.7em;
+  left: 13.5em;
+}
+
+.elements_2 {
+  position: relative;
+  bottom: 0.7em;
+  left: 15.5em;
+}
+
 main {
   flex: 1 1 auto;
+}
+
+button:link {
+  transition: 0.2s;
+  background: linear-gradient(73.56deg, #0D748B -10.13%, #1A0B73 75.49%), #FFFFFF;
+}
+
+button:visited {
+  transition: 0.2s;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(73.56deg, #0D748B -10.13%, #1A0B73 75.49%);
+}
+
+button:hover {
+  transition: 0.2s;
+  background: linear-gradient(73.56deg, #0D748B -10.13%, #1A0B73 75.49%), #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(26, 11, 115, 0.4);
+}
+
+button:active {
+  transition: 0.2s;
+  background: linear-gradient(0deg, rgba(24, 21, 75, 0.6), rgba(24, 21, 75, 0.6)), linear-gradient(73.56deg, #0D748B -10.13%, #1A0B73 75.49%);
 }/*# sourceMappingURL=me.css.map */
