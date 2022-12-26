@@ -116,12 +116,7 @@
             color: $tx_hover;
         }
         button {
-            color: $tx-white;
-            width: 160px;
-            height: 40px;
-            background: linear-gradient(73.56deg, #0D748B -10.13%, #1A0B73 75.49%), #FFFFFF;
-            border-radius: 50px;  
-            border: none;      
+            @include Btn_gradient;   
         }
     }
     &__items:hover {
@@ -138,6 +133,32 @@
 .menu__icon {   
     display: flex;
     gap: 10px;
+
+    .elements_1,
+    .elements_2 {
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    background-color: $header-upBG;
+    color: $tx-white;
+    }
+    .elements_1 {
+    position: relative;
+    bottom: 0.7em;
+    left: 13.5em;
+    }
+    .elements_2 {
+    position: relative;
+    bottom: 0.7em;
+    left: 15.5em;
+    }
+
     // .icon__search
 
     &__search {
@@ -167,28 +188,4 @@
             height: 2.5rem;
         }
     }
-}
-.elements_1,
-.elements_2 {
-    width: 18px;
-    height: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    font-weight: 500;
-    font-size: 10px;
-    line-height: 12px;
-    background-color: $header-upBG;
-    color: $tx-white;
-}
-.elements_1 {
-    position: relative;
-    bottom: 0.7em;
-    left: 13.5em;
-}
-.elements_2 {
-    position: relative;
-    bottom: 0.7em;
-    left: 15.5em;
 }

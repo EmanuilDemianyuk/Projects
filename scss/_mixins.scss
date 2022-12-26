@@ -1,0 +1,23 @@
+//IMG
+
+@mixin img_wh($width, $height) {
+    width: $width;
+    height: $height;
+    object-fit: cover;
+}
+
+//Batton 
+
+@mixin Btn_gradient {
+    color: $tx-white;
+    width: 160px;
+    height: 40px;
+    background: linear-gradient(73.56deg, #0D748B -10.13%, #1A0B73 75.49%), #FFFFFF;
+    border-radius: 50px;  
+    border: none; 
+}
+
+@mixin Btn_White {
+    width: 200px;
+height: 50px;
+}
