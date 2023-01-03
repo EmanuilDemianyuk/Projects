@@ -1,23 +1,33 @@
 //IMG
 
-@mixin img_wh($width, $height) {
-    width: $width;
-    height: $height;
-    object-fit: cover;
+@mixin wh($width, $height) {
+  width: $width;
+  height: $height;
+  object-fit: cover;
 }
 
-//Batton 
+//Batton
 
 @mixin Btn_gradient {
-    color: $tx-white;
-    width: 160px;
-    height: 40px;
-    background: linear-gradient(73.56deg, #0D748B -10.13%, #1A0B73 75.49%), #FFFFFF;
-    border-radius: 50px;  
-    border: none; 
+  color: $tx-white;
+  width: 160px;
+  height: 40px;
+  background: linear-gradient(73.56deg, #0d748b -10.13%, #1a0b73 75.49%),
+    #ffffff;
+  border-radius: 50px;
+  border: none;
 }
 
 @mixin Btn_White {
-    width: 200px;
-height: 50px;
+  width: 200px;
+  height: 50px;
+}
+
+//Display Flex
+
+@mixin display_flex($display, $justify-content, $align-items, $gap) {
+  display: $display;
+  align-items: $align-items;
+  justify-content: $justify-content;
+  gap: $gap;
 }

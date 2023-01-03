@@ -1,3 +1,48 @@
-main {
-    flex: 1 1 auto;
+//main -----------------------------------
+
+.main {
+  flex: 1 1 auto;
+  // .main__billboard
+
+  &__billboard {
+    @include display_flex(flex, space-between, center, 0.625rem);
+  }
+}
+
+.board {
+  // .board__right
+
+  &__right {
+    @include wh(48.75rem, 27.5rem);
+  }
+
+  // .board__text
+
+  &__text {
+  }
+
+  // .board__bg
+
+  &__bg {
+  }
+
+  // .board__img
+
+  &__img {
+  }
+
+  // .board__left
+
+  &__left {
+    img {
+      @include wh(100%, 100%);
+      padding: inherit;
+    }
+  }
+}
+.btn {
+  // .btn_white
+
+  &_white {
+  }
 }

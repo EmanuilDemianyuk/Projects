@@ -39,25 +39,26 @@ li {
   list-style-type: none;
 }
 
-[class*=__container] {
-  max-width: 73.75rem;
-  margin-inline: auto;
+.header__blue {
+  background-color: #18154B;
 }
-
 .header__up {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  gap: none;
   height: 2.875rem;
-  background-color: #18154B;
 }
 .header__contacts {
   display: flex;
+  align-items: none;
+  justify-content: none;
   gap: 2.75rem;
 }
 .header__icon {
   display: flex;
   align-items: center;
+  justify-content: none;
   gap: 1.125rem;
 }
 .header__icon img {
@@ -66,13 +67,22 @@ li {
   -o-object-fit: cover;
      object-fit: cover;
 }
+
 .contacts__items {
   display: flex;
   align-items: center;
+  justify-content: none;
+  gap: 0.625rem;
 }
-.contacts__items img:first-child {
-  height: 0.8125rem;
+.contacts__items .img__mail {
   width: 1rem;
+  height: 0.75rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.contacts__items .img__phone {
+  width: 0.94625rem;
+  height: 0.92625rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -82,21 +92,27 @@ li {
   font-style: normal;
 }
 
-.header__down {
+.header__white {
   background-color: white;
+}
+.header__down {
   height: 4.375rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  gap: none;
 }
 .header__menu {
   display: flex;
+  align-items: none;
   justify-content: space-between;
+  gap: none;
 }
 
 .menu__list {
   display: flex;
   align-items: center;
+  justify-content: none;
   gap: 2.5rem;
   font-family: "Nunito Sans";
   font-style: normal;
@@ -127,7 +143,7 @@ li {
   color: white;
   width: 160px;
   height: 40px;
-  background: linear-gradient(73.56deg, #0D748B -10.13%, #1A0B73 75.49%), #FFFFFF;
+  background: linear-gradient(73.56deg, #0d748b -10.13%, #1a0b73 75.49%), #ffffff;
   border-radius: 50px;
   border: none;
 }
@@ -138,15 +154,20 @@ li {
 
 .menu__icon {
   display: flex;
-  gap: 10px;
+  align-items: none;
+  justify-content: none;
+  gap: 0.625rem;
 }
 .menu__icon .elements_1,
 .menu__icon .elements_2 {
-  width: 18px;
-  height: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: none;
+  width: 1.125rem;
+  height: 1.125rem;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 50%;
   font-weight: 500;
   font-size: 10px;
@@ -170,6 +191,8 @@ li {
 .menu__icon__search img {
   width: 2.5rem;
   height: 2.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .menu__icon__favorites {
   flex: 0;
@@ -177,6 +200,8 @@ li {
 .menu__icon__favorites img {
   width: 2.5rem;
   height: 2.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .menu__icon__basket {
   flex: 0;
@@ -184,6 +209,29 @@ li {
 .menu__icon__basket img {
   width: 2.5rem;
   height: 2.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main__billboard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.625rem;
+}
+
+.board__right {
+  width: 48.75rem;
+  height: 27.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.board__left img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: inherit;
 }
 
 main {

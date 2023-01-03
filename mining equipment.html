@@ -1,77 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mining equipment</title>
-    <link rel="stylesheet" href="/scss/me.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="/scss/me.css" />
+    <link href="/bootstrap/bootstrap-grid.css" rel="stylesheet" />
+    <script defer src="/js/bootstrap.bundle.min.js.map"></script>
+  </head>
+  <body>
     <div class="wrapper">
-        <header class="header">
-            <div class="header__container">
-                <div class="header__up">
-                    <div class="header__contacts">
-                        <div class="contacts__items">
-                            <img src="/img/Vector (1).png" alt="mail">
-                            <p>mein@miner.com</p>
-                        </div>
-                        
-                        <div class="contacts__items">
-                            <img src="/img/Vector (2).png" alt="number" class="img__phone">
-                            <p>+7 (999) 999-99-99</p>
-                        </div>
-                    </div>
-                    <div class="header__icon">
-                        <a href="#"><img src="/img/teleg.png" alt="telegram"></a>
-                        <a href="#"><img src="/img/whats-app-filled.png" alt="whatsapp"></a>
-                    </div>
-                </div>
-                <div class="header__down">
-                    <nav class="header__menu">
-                       <ul class="menu__list">
-                        <li class="menu__items"><a href="#"><img src="/img/MEIN MINER.png" alt="Main_logo"></a></li>
-                        <li class="menu__items">
-                        <a href="#">
-                            <select name="catalog" id="catalog">
-                            <option value="catalog">Каталог товаров</option>
-                            </select>
-                        </a>
-                        </li>
-                        <li class="menu__items"><a href="#"><p>Цены</p></a></li>
-                        <li class="menu__items"><a href="#">Калькулятор</a></li>
-                        <li class="menu__items"><a href="#">Доставка</a></li>
-                        <li class="menu__items"><a href="#">Отзывы</a></li>
-                        <li class="menu__items"><a href="#"><button class="gradient__btn">Заказать звонок</button></a></li>
-                       </ul>
-                    </nav>
-                    <div class="menu__icon">
-                        <span class="elements_1">6</span>
-                        <span class="elements_2">3</span>
-                        <div class="icon__search"><a href="#"><img src="/img/поиск.png" alt="logo"></a></div>
-                        <div class="icon__favorites"><a href="#"><img src="/img/избранное.png" alt="logo"></a></div>
-                        <div class="icon__basket"><a href="#"><img src="/img/корзина.png" alt="logo"></a></div>
-                    </div>
-                </div>
+      <header class="header">
+        <div class="header__blue">
+          <div class="header__up container">
+            <div class="header__contacts">
+              <div class="contacts__items">
+                <img src="/img/Vector (1).png" alt="mail" class="img__mail" />
+                <p>mein@miner.com</p>
+              </div>
+
+              <div class="contacts__items">
+                <img
+                  src="/img/Vector (2).png"
+                  alt="number"
+                  class="img__phone"
+                />
+                <p>+7 (999) 999-99-99</p>
+              </div>
             </div>
-        </header>
-        <main class="main__container">
-            <section class="main__billboard">
-                <div class="billboard__box-1">
+            <div class="header__icon">
+              <a href="#"><img src="/img/teleg.png" alt="telegram" /></a>
+              <a href="#"
+                ><img src="/img/whats-app-filled.png" alt="whatsapp"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="header__white">
+          <div class="header__down container">
+            <nav class="header__menu">
+              <ul class="menu__list">
+                <li class="menu__items">
+                  <a href="#"
+                    ><img src="/img/MEIN MINER.png" alt="Main_logo"
+                  /></a>
+                </li>
+                <li class="menu__items">
+                  <a href="#">
+                    <select name="catalog" id="catalog">
+                      <option value="catalog">Каталог товаров</option>
+                    </select>
+                  </a>
+                </li>
+                <li class="menu__items">
+                  <a href="#"><p>Цены</p></a>
+                </li>
+                <li class="menu__items"><a href="#">Калькулятор</a></li>
+                <li class="menu__items"><a href="#">Доставка</a></li>
+                <li class="menu__items"><a href="#">Отзывы</a></li>
+                <li class="menu__items">
+                  <a href="#"
+                    ><button class="gradient__btn">Заказать звонок</button></a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <div class="menu__icon">
+              <span class="elements_1">6</span>
+              <span class="elements_2">3</span>
+              <div class="icon__search">
+                <a href="#"><img src="/img/поиск.png" alt="logo" /></a>
+              </div>
+              <div class="icon__favorites">
+                <a href="#"><img src="/img/избранное.png" alt="logo" /></a>
+              </div>
+              <div class="icon__basket">
+                <a href="#"><img src="/img/корзина.png" alt="logo" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main container">
+        <section class="main__billboard">
+          <div class="board__right">
+            <div class="board__text">
+              <h2>оборудование для майнинга оптом</h2>
 
-                    <div class="box__header"><h2>оборудование для майнинга оптом</h2></div>
+              <p>с гарантией 12 месяцев</p>
 
-                    <p>с гарантией 12 месяцев</p>
-
-                    <button class="box__heade white__btn">Перейти в каталог</button>
-                </div>
-                <div class="billboard__box-2"></div>
-            </section>
-        </main>
-        <footer></footer>
+              <button class="btn_white">Перейти в каталог</button>
+            </div>
+            <div class="board__bg"></div>
+            <div class="board__img">
+              <img src="/img/image mainer.png" alt="mainer" />
+            </div>
+          </div>
+          <div class="board__left">
+            <a href="#"><img src="/img/Баннер.png" alt="Catalog" /></a>
+          </div>
+        </section>
+      </main>
+      <footer></footer>
     </div>
-</body>
+  </body>
 </html>
