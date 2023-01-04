@@ -1,6 +1,11 @@
-//IMG
+//IMG width height
 
 @mixin wh($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin wh_img($width, $height) {
   width: $width;
   height: $height;
   object-fit: cover;
@@ -19,15 +24,54 @@
 }
 
 @mixin Btn_White {
+  color: $tx-white;
   width: 200px;
   height: 50px;
+  border-radius: 50px;
+  border: none;
+}
+
+@mixin Btn_gradient_catalog {
+  border: inherit;
+  background-color: $White_btn;
+  line-height: 22px;
+  color: $header-upBG;
+  @include size_weight(1rem, 700);
+}
+
+@mixin Btn_white_catalog {
+}
+
+@mixin Btn_arrow {
+  border: 0.0625rem solid $header-upBG;
+  background-color: $header-upBG;
+  height: 0rem;
+  width: 1.875rem;
+}
+
+@mixin Btn_arrow_rotate {
+  position: relative;
+  left: 1.25rem;
+  top: -0.2853rem;
+  display: block;
+  width: 0.4375rem;
+  height: 0.4375rem;
+  border-top: 0.125rem solid $header-upBG;
+  border-left: 0.125rem solid $header-upBG;
+  transform: rotate(135deg);
 }
 
 //Display Flex
-
 @mixin display_flex($display, $justify-content, $align-items, $gap) {
   display: $display;
   align-items: $align-items;
   justify-content: $justify-content;
   gap: $gap;
+}
+
+//Font-Family
+
+@mixin size_weight($size, $weight) {
+  font-size: $size;
+  font-weight: $weight;
 }

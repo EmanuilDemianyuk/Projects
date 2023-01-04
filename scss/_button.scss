@@ -1,39 +1,56 @@
 //Gradient Battons
 
 .gradient__btn:link {
-    transition: 0.2s;
-    background: linear-gradient(73.56deg, #0D748B -10.13%, #1A0B73 75.49%), #FFFFFF;
+  transition: 0.2s;
+  background: linear-gradient(73.56deg, #0d748b -10.13%, #1a0b73 75.49%),
+    #ffffff;
 }
 .gradient__btn:visited {
-    transition: 0.2s;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(73.56deg, #0D748B -10.13%, #1A0B73 75.49%);
+  transition: 0.2s;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    linear-gradient(73.56deg, #0d748b -10.13%, #1a0b73 75.49%);
 }
 .gradient__btn:hover {
-    transition: 0.2s;
-    background: linear-gradient(73.56deg, #0D748B -10.13%, #1A0B73 75.49%), #FFFFFF;
-    box-shadow: 0px 4px 20px rgba(26, 11, 115, 0.4);
+  transition: 0.2s;
+  background: linear-gradient(73.56deg, #0d748b -10.13%, #1a0b73 75.49%),
+    #ffffff;
+  box-shadow: 0px 4px 20px rgba(26, 11, 115, 0.4);
 }
 .gradient__btn:active {
-    transition: 0.2s;
-    background: linear-gradient(0deg, rgba(24, 21, 75, 0.6), rgba(24, 21, 75, 0.6)), linear-gradient(73.56deg, #0D748B -10.13%, #1A0B73 75.49%);
+  transition: 0.2s;
+  background: linear-gradient(
+      0deg,
+      rgba(24, 21, 75, 0.6),
+      rgba(24, 21, 75, 0.6)
+    ),
+    linear-gradient(73.56deg, #0d748b -10.13%, #1a0b73 75.49%);
 }
 
 //White battons
 
 .white__btn:link {
-    transition: 0.2s;
-    background: $White_btn;
+  transition: 0.2s;
+  background: $White_btn;
 }
 .white__btn:visited {
-    transition: 0.2s;
-    background: rgba(255, 255, 255, 0.6); 
+  transition: 0.2s;
+  background: rgba(255, 255, 255, 0.6);
 }
 .white__btn:hover {
-    transition: 0.2s;
-    background: $White_btn;
-    box-shadow: 0px 4px 30px rgba(255, 255, 255, 0.4);
+  transition: 0.2s;
+  background: $White_btn;
+  box-shadow: 0px 4px 30px rgba(255, 255, 255, 0.4);
 }
 .white__btn:active {
-    transition: 0.2s;
-    background: linear-gradient(0deg, rgba(24, 21, 75, 0.15), rgba(24, 21, 75, 0.15)), #FFFFFF;
+  transition: 0.2s;
+  background: linear-gradient(
+      0deg,
+      rgba(24, 21, 75, 0.15),
+      rgba(24, 21, 75, 0.15)
+    ),
+    #ffffff;
 }

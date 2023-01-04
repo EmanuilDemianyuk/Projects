@@ -1,17 +1,24 @@
 //Background
-$wrapp-Bg: #F5F5F5;
-$header-upBG: #18154B; 
+$wrapp-Bg: #f5f5f5;
+$header-upBG: #18154b;
 $header-downBG: #ffff;
 $White_btn: #ffff;
 
-//text 
+//billboard
+$dotted_passive: rgba(56, 176, 193, 0.4);
+$dotted_active: #38b0c1;
+
+//Categories
+$categories_gradient: linear-gradient(86.02deg, #0d748b 11.79%, #1a0b73 90.28%);
+
+//text
 $tx_hover: rgba(48, 50, 57, 0.7);
 
 $tx-white: #ffff;
 $tx-black: rgba(48, 50, 57, 1);
-$tx-header_up: #F0F5FB;
+$tx-purple: #18154b;
+
+$tx-header_up: #f0f5fb;
 $tx-header_down: rgba(48, 50, 57, 1);
 
-
-//color 
-
+//color
