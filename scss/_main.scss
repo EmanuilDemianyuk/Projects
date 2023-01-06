@@ -128,24 +128,57 @@
   // .categories__header
 
   &__header {
+    @include size_weight(36px, 800);
+
+    text-transform: uppercase;
+    line-height: 49px;
+    color: $header-upBG;
+    padding: 40px 0px;
   }
 
   // .categories__box
 
   &__box {
+    @include display_grid(
+      grid,
+      10.625rem 10.625rem / 23.75rem 23.75rem 23.75rem,
+      1.25rem
+    );
+    .asic {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+    .gpu {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+    }
+    .videocard {
+      grid-column: 3 / 4;
+      grid-row: 1 / 2;
+    }
+    .accessories {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+    }
+    .pc {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+    }
+    .spare_parts {
+      grid-column: 3 / 4;
+      grid-row: 2 / 3;
+    }
   }
 }
 .box {
   // .box__items
-
   &__items {
     position: relative;
     left: 0;
     top: 0;
     overflow: hidden;
     @include wh(380px, 170px);
-    // @include display_flex(flex, none, center, none);
-
+    border-radius: 0.625rem;
     background-color: $header-downBG;
 
     .circle {
@@ -168,7 +201,18 @@
         padding: 20px 0px 20px 35px;
       }
       .text {
+        p {
+          @include wh(153px, 70px);
+          @include size_weight(18px, 600);
+          color: $tx-items;
+          position: relative;
+          top: -10px;
+          left: 0;
+        }
         .btn__catalog {
+          position: relative;
+          top: 1.125rem;
+          right: 0px;
           @include Btn_gradient_catalog;
           @include display_flex(flex, none, center, 0.625rem);
           .after__arrow {
