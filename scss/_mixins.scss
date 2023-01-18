@@ -32,11 +32,9 @@
 }
 
 @mixin Btn_gradient_catalog {
-  border: inherit;
   background-color: $White_btn;
   line-height: 22px;
   color: $header-upBG;
-  cursor: pointer;
   @include size_weight(1rem, 700);
 }
 

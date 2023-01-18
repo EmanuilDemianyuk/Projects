@@ -11,6 +11,23 @@ $dotted_active: #38b0c1;
 //Categories
 $categories_gradient: linear-gradient(86.02deg, #0d748b 11.79%, #1a0b73 90.28%);
 
+//Advantage
+$advantage_gradient_bg: radial-gradient(
+  98.19% 130.91% at -8.58% -1.44%,
+  #42e8e0 0%,
+  #40ddda 1.57%,
+  #3aaec0 9.21%,
+  #3484a9 17.3%,
+  #2f6195 25.73%,
+  #2b4486 34.58%,
+  #282e79 44%,
+  #180564 82.26%
+);
+
+$circle_bg: #25307b;
+
+//Bestsellers
+$card_bg: #ffff;
 //text
 $tx_hover: rgba(48, 50, 57, 0.7);
 
@@ -24,3 +41,6 @@ $tx-header_up: #f0f5fb;
 $tx-header_down: rgba(48, 50, 57, 1);
 
 //color
+
+$h2_color_wt: #ffff;
+$p_color_ht: #ffff;
