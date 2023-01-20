@@ -368,18 +368,29 @@
   // .bestsellers__header
 
   &__header {
+    h2 {
+      @include size_weight(36px, 800);
+      line-height: 49px;
+      text-transform: uppercase;
+      margin-top: 5rem;
+      color: $tx-purple;
+    }
   }
 
   // .bestsellers__container
 
   &__container {
-    @include wh(220px, 360px);
+    margin-top: 2.5rem;
+    @include display_flex(flex, none, center, 1.25rem);
   }
 }
 .card {
-  display: block;
+  @include wh(220px, 360px);
   background: $card_bg;
+  box-shadow: 0rem 0.25rem 1.25rem rgba(0, 7, 94, 0.1);
   border-radius: 0.625rem;
+  flex: 1 1 auto;
+
   // .card__icon
 
   &__icon {
@@ -398,11 +409,50 @@
   }
   .info {
     p {
-      padding: 10px 0px 6px 20px;
+      @include size_weight(0.875rem, 600);
+      line-height: 1.1875rem;
+      padding: 10px 0px 0px 20px;
+    }
+    .dot::before {
+      content: "";
+      display: inline-block;
+      @include wh(6px, 6px);
+      background-color: $dot_bg;
+      border-radius: 50%;
+      margin-right: 0.5rem;
+    }
+    .dot_con {
+      padding: 10px 0px 0px 20px;
+      @include display_flex(flex, none, center, none);
+      .dot {
+        @include size_weight(0.75rem, 600);
+        line-height: 1rem;
+      }
     }
   }
   .sale {
     @include display_flex(flex, space-between, center, none);
-    padding: 8px 20px 18px 20px;
+    padding: 0rem 1.25rem 1.125rem 1.25rem;
+    span {
+      @include size_weight(0.875rem, 700);
+      line-height: 1.1875rem;
+      color: $price_text;
+    }
+    .sale_price {
+      @include size_weight(0.625rem, 600);
+      line-height: 0.875rem;
+      color: $sale_price;
+      text-decoration: line-through;
+    }
+  }
+  .btn {
+    position: relative;
+    bottom: 10px;
+    @include display_flex(flex, center, center, none);
+  }
+  button {
+    @include Btn_gradient;
+    @include size_weight(0.8125rem, 700);
+    line-height: 1.125rem;
   }
 }

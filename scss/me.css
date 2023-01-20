@@ -146,6 +146,9 @@ li {
   background: linear-gradient(73.56deg, #0d748b -10.13%, #1a0b73 75.49%), #ffffff;
   border-radius: 50px;
   border: none;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  line-height: 1.125rem;
 }
 .menu__items:hover {
   color: rgba(48, 50, 57, 0.7);
@@ -535,15 +538,29 @@ li {
   grid-row: 2/3;
 }
 
+.bestsellers__header h2 {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 49px;
+  text-transform: uppercase;
+  margin-top: 5rem;
+  color: #18154b;
+}
 .bestsellers__container {
-  width: 220px;
-  height: 360px;
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: none;
+  gap: 1.25rem;
 }
 
 .card {
-  display: block;
+  width: 220px;
+  height: 360px;
   background: white;
+  box-shadow: 0rem 0.25rem 1.25rem rgba(0, 7, 94, 0.1);
   border-radius: 0.625rem;
+  flex: 1 1 auto;
 }
 .card__icon {
   padding: 0.9375rem 0.9375rem 0rem 0.9375rem;
@@ -563,14 +580,70 @@ li {
   height: 160px;
 }
 .card .info p {
-  padding: 10px 0px 6px 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.1875rem;
+  padding: 10px 0px 0px 20px;
+}
+.card .info .dot::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: #38b0c1;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+.card .info .dot_con {
+  padding: 10px 0px 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: none;
+  gap: none;
+}
+.card .info .dot_con .dot {
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1rem;
 }
 .card .sale {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: none;
-  padding: 8px 20px 18px 20px;
+  padding: 0rem 1.25rem 1.125rem 1.25rem;
+}
+.card .sale span {
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.1875rem;
+  color: #303239;
+}
+.card .sale .sale_price {
+  font-size: 0.625rem;
+  font-weight: 600;
+  line-height: 0.875rem;
+  color: #9b9b9b;
+  text-decoration: line-through;
+}
+.card .btn {
+  position: relative;
+  bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: none;
+}
+.card button {
+  color: white;
+  width: 160px;
+  height: 40px;
+  background: linear-gradient(73.56deg, #0d748b -10.13%, #1a0b73 75.49%), #ffffff;
+  border-radius: 50px;
+  border: none;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  line-height: 1.125rem;
 }
 
 .gradient__btn:link {

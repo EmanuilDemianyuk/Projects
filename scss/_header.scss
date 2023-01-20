@@ -105,6 +105,8 @@
     }
     button {
       @include Btn_gradient;
+      @include size_weight(0.8125rem, 700);
+      line-height: 1.125rem;
     }
   }
   &__items:hover {
