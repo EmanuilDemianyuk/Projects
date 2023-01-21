@@ -996,11 +996,9 @@ li {
 .contacts__maps .nav__map {
   position: relative;
   left: 15px;
-  bottom: 32px;
+  bottom: 50px;
   width: 100%;
   height: 365px;
-  -o-object-fit: cover;
-     object-fit: cover;
   z-index: 2;
 }
 .contacts__maps .marker {
@@ -1009,9 +1007,16 @@ li {
   -o-object-fit: cover;
      object-fit: cover;
   position: relative;
-  left: 440px;
-  top: 110px;
+  left: 430px;
+  top: 100px;
   z-index: 3;
+}
+
+.footer {
+  margin-top: 80px;
+  width: inherit;
+  height: 336px;
+  background-color: #18154b;
 }
 
 .gradient__btn:link {

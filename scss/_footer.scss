@@ -1,0 +1,5 @@
+.footer {
+  margin-top: 80px;
+  @include wh(inherit, 336px);
+  background-color: $footer__bg;
+}

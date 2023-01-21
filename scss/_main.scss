@@ -740,15 +740,15 @@
     .nav__map {
       position: relative;
       left: 15px;
-      bottom: 32px;
-      @include wh_img(100%, 365px);
+      bottom: 50px;
+      @include wh(100%, 365px);
       z-index: 2;
     }
     .marker {
       @include wh_img(22px, 32px);
       position: relative;
-      left: 440px;
-      top: 110px;
+      left: 430px;
+      top: 100px;
       z-index: 3;
     }
   }
