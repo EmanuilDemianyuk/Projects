@@ -565,3 +565,40 @@
 }
 
 //form-----------------------------------
+
+.form {
+  // .form__container
+
+  &__container {
+    @include wh(100%, 538px);
+    background: url("/img/form__bg.png") center no-repeat;
+  }
+
+  // .form__header
+
+  &__header {
+  }
+
+  // .form__text
+
+  &__text {
+  }
+
+  // .form__input-group
+
+  &__input-group {
+  }
+
+  // .form__checkbox
+
+  &__checkbox {
+  }
+}
+.white {
+  // .white__btn
+
+  &__btn {
+  }
+}
+.personal-data {
+}

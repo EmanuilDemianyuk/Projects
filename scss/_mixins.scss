@@ -38,7 +38,12 @@
   @include size_weight(1rem, 700);
 }
 
-@mixin Btn_white_catalog {
+@mixin Btn_white_submit {
+  width: 240px;
+  height: 50px;
+  background-color: $tx-white;
+  border-radius: 50px;
+  color: $tx-purple;
 }
 
 @mixin Btn_arrow {
