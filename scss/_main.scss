@@ -561,44 +561,195 @@
         line-height: 145%;
       }
     }
+    .width {
+      p {
+        @include wh(8.375rem, 4.3125rem);
+      }
+    }
   }
 }
 
 //form-----------------------------------
 
 .form {
+  @include wh(100%, 330px);
+  background: url("/img/form__bg.png") center / 100% 100% no-repeat;
+  filter: drop-shadow(0px 4px 20px rgba(0, 7, 94, 0.1));
+  border-radius: 10px;
   // .form__container
 
   &__container {
-    @include wh(100%, 538px);
-    background: url("/img/form__bg.png") center no-repeat;
+    padding: 50px 0px 50px 60px;
   }
 
   // .form__header
 
   &__header {
+    h2 {
+      @include wh(620px, 38px);
+      @include size_weight(28px, 800);
+      line-height: 38px;
+      text-transform: uppercase;
+      color: $tx-white;
+    }
   }
 
   // .form__text
 
   &__text {
+    margin-top: 10px;
+    p {
+      @include size_weight(18px, 600);
+      line-height: 25px;
+      color: $tx-white;
+    }
   }
 
   // .form__input-group
 
   &__input-group {
+    margin-top: 25px;
+    input {
+      @include wh(240px, 50px);
+      background: rgba(255, 255, 255, 0.3);
+      border: 1px solid rgba(243, 243, 243, 0.7);
+      border-radius: 50px;
+      outline: none;
+      margin-right: 20px;
+    }
+    input::placeholder {
+      padding-left: 20px;
+      @include size_weight(14px, 400);
+      line-height: 135%;
+      color: $tx-f3;
+    }
+    button {
+      @include Btn_white_submit;
+    }
   }
 
   // .form__checkbox
 
   &__checkbox {
+    margin-top: 20px;
+    @include display_flex(flex, none, none, 10px);
+    label {
+      @include size_weight(14px, 400);
+      line-height: 19px;
+      color: $tx-f3;
+    }
+    .personal-data {
+      text-decoration: underline;
+    }
   }
 }
-.white {
-  // .white__btn
 
-  &__btn {
+//contacts-----------------------------------
+
+.contacts {
+  @include wh(100%, 370px);
+  margin-top: 80px;
+  // .contacts__container
+
+  &__container {
+    display: grid;
+    grid-template: 1fr / 500px 800px;
   }
-}
-.personal-data {
+
+  // .contacts__addres
+
+  &__addres {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    .addres__header {
+      h2 {
+        @include size_weight(36px, 800);
+        line-height: 49px;
+        text-transform: uppercase;
+        color: $tx-purple;
+      }
+    }
+    .addres__contact {
+      margin-top: 40px;
+      @include display_flex(flex, none, none, 0.625rem);
+      flex-direction: column;
+      .siti {
+        @include display_flex(flex, none, center, 0.625rem);
+        p {
+          @include size_weight(18px, 400);
+          line-height: 145%;
+          color: $tx-items;
+        }
+        img {
+          @include wh_img(12.2px, 16.2px);
+        }
+      }
+      .metro {
+        @include display_flex(flex, none, center, 0.625rem);
+        p {
+          @include size_weight(18px, 400);
+          line-height: 145%;
+          color: $tx-items;
+        }
+        img {
+          @include wh_img(16px, 11.56px);
+        }
+      }
+      .mail {
+        @include display_flex(flex, none, center, 0.625rem);
+        p {
+          @include size_weight(18px, 400);
+          line-height: 145%;
+          color: $tx-items;
+        }
+        img {
+          @include wh_img(16px, 12px);
+        }
+      }
+      .phone {
+        @include display_flex(flex, none, center, 0.625rem);
+        p {
+          @include size_weight(18px, 400);
+          line-height: 145%;
+          color: $tx-items;
+        }
+        img {
+          @include wh_img(15.14px, 14.82px);
+        }
+      }
+      .clock {
+        @include display_flex(flex, none, none, 0.625rem);
+        p {
+          @include size_weight(18px, 400);
+          line-height: 145%;
+          color: $tx-items;
+          @include wh(233px, inherit);
+        }
+        img {
+          @include wh_img(16px, 16px);
+        }
+      }
+    }
+  }
+
+  // .contacts__maps
+
+  &__maps {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    .nav__map {
+      position: relative;
+      left: 15px;
+      bottom: 32px;
+      @include wh_img(100%, 365px);
+      z-index: 2;
+    }
+    .marker {
+      @include wh_img(22px, 32px);
+      position: relative;
+      left: 440px;
+      top: 110px;
+      z-index: 3;
+    }
+  }
 }

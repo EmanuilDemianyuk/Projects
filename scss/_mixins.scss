@@ -44,6 +44,8 @@
   background-color: $tx-white;
   border-radius: 50px;
   color: $tx-purple;
+  @include size_weight(15px, 700);
+  line-height: 20px;
 }
 
 @mixin Btn_arrow {

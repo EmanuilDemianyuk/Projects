@@ -776,12 +776,244 @@ li {
   font-weight: 400;
   line-height: 145%;
 }
-
-.form__container {
-  width: 100%;
-  height: 538px;
-  background: url("/img/form__bg.png") center no-repeat;
+.rowbottom__item .width p {
+  width: 8.375rem;
+  height: 4.3125rem;
 }
+
+.form {
+  width: 100%;
+  height: 330px;
+  background: url("/img/form__bg.png") center/100% 100% no-repeat;
+  filter: drop-shadow(0px 4px 20px rgba(0, 7, 94, 0.1));
+  border-radius: 10px;
+}
+.form__container {
+  padding: 50px 0px 50px 60px;
+}
+.form__header h2 {
+  width: 620px;
+  height: 38px;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 38px;
+  text-transform: uppercase;
+  color: white;
+}
+.form__text {
+  margin-top: 10px;
+}
+.form__text p {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25px;
+  color: white;
+}
+.form__input-group {
+  margin-top: 25px;
+}
+.form__input-group input {
+  width: 240px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(243, 243, 243, 0.7);
+  border-radius: 50px;
+  outline: none;
+  margin-right: 20px;
+}
+.form__input-group input::-moz-placeholder {
+  padding-left: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 135%;
+  color: #f3f3f3;
+}
+.form__input-group input:-ms-input-placeholder {
+  padding-left: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 135%;
+  color: #f3f3f3;
+}
+.form__input-group input::placeholder {
+  padding-left: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 135%;
+  color: #f3f3f3;
+}
+.form__input-group button {
+  width: 240px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50px;
+  color: #18154b;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+}
+.form__checkbox {
+  margin-top: 20px;
+  display: flex;
+  align-items: none;
+  justify-content: none;
+  gap: 10px;
+}
+.form__checkbox label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #f3f3f3;
+}
+.form__checkbox .personal-data {
+  text-decoration: underline;
+}
+
+.contacts {
+  width: 100%;
+  height: 370px;
+  margin-top: 80px;
+}
+.contacts__container {
+  display: grid;
+  grid-template: 1fr/500px 800px;
+}
+.contacts__addres {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.contacts__addres .addres__header h2 {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 49px;
+  text-transform: uppercase;
+  color: #18154b;
+}
+.contacts__addres .addres__contact {
+  margin-top: 40px;
+  display: flex;
+  align-items: none;
+  justify-content: none;
+  gap: 0.625rem;
+  flex-direction: column;
+}
+.contacts__addres .addres__contact .siti {
+  display: flex;
+  align-items: center;
+  justify-content: none;
+  gap: 0.625rem;
+}
+.contacts__addres .addres__contact .siti p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 145%;
+  color: #303239;
+}
+.contacts__addres .addres__contact .siti img {
+  width: 12.2px;
+  height: 16.2px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.contacts__addres .addres__contact .metro {
+  display: flex;
+  align-items: center;
+  justify-content: none;
+  gap: 0.625rem;
+}
+.contacts__addres .addres__contact .metro p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 145%;
+  color: #303239;
+}
+.contacts__addres .addres__contact .metro img {
+  width: 16px;
+  height: 11.56px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.contacts__addres .addres__contact .mail {
+  display: flex;
+  align-items: center;
+  justify-content: none;
+  gap: 0.625rem;
+}
+.contacts__addres .addres__contact .mail p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 145%;
+  color: #303239;
+}
+.contacts__addres .addres__contact .mail img {
+  width: 16px;
+  height: 12px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.contacts__addres .addres__contact .phone {
+  display: flex;
+  align-items: center;
+  justify-content: none;
+  gap: 0.625rem;
+}
+.contacts__addres .addres__contact .phone p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 145%;
+  color: #303239;
+}
+.contacts__addres .addres__contact .phone img {
+  width: 15.14px;
+  height: 14.82px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.contacts__addres .addres__contact .clock {
+  display: flex;
+  align-items: none;
+  justify-content: none;
+  gap: 0.625rem;
+}
+.contacts__addres .addres__contact .clock p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 145%;
+  color: #303239;
+  width: 233px;
+  height: inherit;
+}
+.contacts__addres .addres__contact .clock img {
+  width: 16px;
+  height: 16px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.contacts__maps {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.contacts__maps .nav__map {
+  position: relative;
+  left: 15px;
+  bottom: 32px;
+  width: 100%;
+  height: 365px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 2;
+}
+.contacts__maps .marker {
+  width: 22px;
+  height: 32px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  left: 440px;
+  top: 110px;
+  z-index: 3;
+}
+
 .gradient__btn:link {
   transition: 0.2s;
   background: linear-gradient(73.56deg, #0d748b -10.13%, #1a0b73 75.49%), #ffffff;
