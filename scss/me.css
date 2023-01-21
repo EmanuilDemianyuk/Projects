@@ -646,6 +646,137 @@ li {
   line-height: 1.125rem;
 }
 
+.dot__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 1.875rem;
+}
+.dot__nav .dot__item {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(56, 176, 193, 0.4);
+  border-radius: 50%;
+}
+.dot__nav .dot__active {
+  background-color: #38b0c1;
+  width: 12px;
+  height: 12px;
+}
+
+.company {
+  margin-top: 5rem;
+}
+.company__container {
+  display: flex;
+  align-items: none;
+  justify-content: none;
+  gap: 5rem;
+  flex-direction: column;
+}
+
+.rowtop {
+  display: grid;
+  grid-template: 3.125rem 10.3125rem/1fr 28.75rem;
+  -moz-column-gap: 4.6875rem;
+       column-gap: 4.6875rem;
+  row-gap: 2.5rem;
+}
+.rowtop__header {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.rowtop__header h2 {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 49px;
+  text-transform: uppercase;
+  color: #18154b;
+}
+.rowtop__text {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.rowtop__text p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 145%;
+  color: #303239;
+  width: 625px;
+  height: none;
+}
+.rowtop__logo {
+  grid-column: 2/3;
+  grid-row: 1/-1;
+}
+.rowtop__logo img {
+  width: 460px;
+  height: 270px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.rowbottom {
+  width: inherit;
+  height: 218px;
+  display: flex;
+  align-items: none;
+  justify-content: none;
+  gap: none;
+}
+.rowbottom__item {
+  flex: 1 1 auto;
+}
+.rowbottom__item .img-space {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: none;
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  border-radius: 50%;
+}
+.rowbottom__item .img-space .shell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: none;
+  width: 60px;
+  height: 60px;
+  background-color: #f0f5fb;
+  border-radius: 50%;
+}
+.rowbottom__item .img-space .shell .itm1,
+.rowbottom__item .img-space .shell .itm3,
+.rowbottom__item .img-space .shell .itm4 {
+  width: 36px;
+  height: 36px;
+}
+.rowbottom__item .img-space .shell .itm2 {
+  width: 38px;
+  height: 38px;
+}
+.rowbottom__item .img-space .shell .itm5 {
+  width: 26.63px;
+  height: 36px;
+}
+.rowbottom__item .img-space .shell .itm6 {
+  width: 36px;
+  height: 24.57px;
+}
+.rowbottom__item .icon__text {
+  margin-top: 15px;
+}
+.rowbottom__item .icon__text p {
+  width: 123px;
+  height: 69px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 145%;
+}
+
 .gradient__btn:link {
   transition: 0.2s;
   background: linear-gradient(73.56deg, #0d748b -10.13%, #1a0b73 75.49%), #ffffff;

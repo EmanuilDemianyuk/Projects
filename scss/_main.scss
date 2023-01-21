@@ -456,3 +456,112 @@
     line-height: 1.125rem;
   }
 }
+.dot__nav {
+  @include display_flex(flex, center, center, 10px);
+  margin-top: 1.875rem;
+  .dot__item {
+    @include wh(10px, 10px);
+    background-color: $dot__items;
+    border-radius: 50%;
+  }
+  .dot__active {
+    background-color: $dot__active;
+    @include wh(12px, 12px);
+  }
+}
+
+//company-----------------------------------
+
+.company {
+  margin-top: 5rem;
+  // .company__container
+
+  &__container {
+    @include display_flex(flex, none, none, 5rem);
+    flex-direction: column;
+  }
+}
+.rowtop {
+  display: grid;
+  grid-template: 3.125rem 10.3125rem / 1fr 28.75rem;
+  column-gap: 4.6875rem;
+  row-gap: 2.5rem;
+  // .row__header
+
+  &__header {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    h2 {
+      @include size_weight(36px, 800);
+      line-height: 49px;
+      text-transform: uppercase;
+      color: $tx-purple;
+    }
+  }
+  // .rowtop__text
+  &__text {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    p {
+      @include size_weight(16px, 400);
+      line-height: 145%;
+      color: $rowtop_text;
+      @include wh(625px, none);
+    }
+  }
+
+  // .rowtop__logo
+  &__logo {
+    grid-column: 2 / 3;
+    grid-row: 1 / -1;
+    img {
+      @include wh_img(460px, 270px);
+    }
+  }
+}
+.rowbottom {
+  @include wh(inherit, 218px);
+  @include display_flex(flex, none, none, none);
+  // .rowbottom__item
+
+  &__item {
+    flex: 1 1 auto;
+    .img-space {
+      @include display_flex(flex, center, center, none);
+      @include wh(80px, 80px);
+      background-color: $shell_light;
+      border-radius: 50%;
+
+      .shell {
+        @include display_flex(flex, center, center, none);
+        @include wh(60px, 60px);
+        background-color: $shell_gray;
+        border-radius: 50%;
+        .itm1,
+        .itm3,
+        .itm4 {
+          @include wh(36px, 36px);
+        }
+        .itm2 {
+          @include wh(38px, 38px);
+        }
+        .itm5 {
+          @include wh(26.63px, 36px);
+        }
+        .itm6 {
+          @include wh(36px, 24.57px);
+        }
+      }
+    }
+    .icon__text {
+      margin-top: 15px;
+      p {
+        @include wh(123px, 69px);
+        @include size_weight(16px, 400);
+        line-height: 145%;
+      }
+    }
+  }
+}
+
+//form-----------------------------------
