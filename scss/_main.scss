@@ -55,9 +55,9 @@
       z-index: 10;
       span {
         color: $tx-purple;
-        @include wh(23.75rem, 27.5rem);
-        @include size_weight(0.9375rem, 700);
-        line-height: 1.25rem;
+        @include wh(380px, 440px);
+        @include size_weight(15px, 700);
+        line-height: 20px;
       }
     }
   }
@@ -737,6 +737,7 @@
   &__maps {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    display: flex;
     .nav__map {
       position: relative;
       left: 15px;

@@ -2,4 +2,124 @@
   margin-top: 80px;
   @include wh(inherit, 336px);
   background-color: $footer__bg;
+  // .footer__content
+
+  &__content {
+    padding: 60px 0px;
+    display: grid;
+    grid-template: 50px 50px 1fr / repeat(auto-fit, 345px);
+  }
+
+  // .footer__title
+
+  &__title {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    h3 {
+      @include size_weight(22px, 800);
+      line-height: 30px;
+      text-transform: uppercase;
+      color: $tx-white;
+    }
+  }
+
+  // .footer__c
+
+  &__c {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    @include size_weight(15px, 400);
+    line-height: 20px;
+    color: $tx-text_B8;
+  }
+
+  // .footer__customer
+
+  &__customer {
+    grid-row: 1 / -1;
+    grid-column: 2 / 3;
+    .customer_head {
+      h5 {
+        @include size_weight(16px, 700);
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: $tx-text_B8;
+      }
+    }
+    .customer_body {
+      margin-top: 20px;
+      @include display_flex(flex, none, none, 8px);
+      flex-direction: column;
+      a {
+        @include size_weight(15px, 400);
+        line-height: 20px;
+        color: $tx-white;
+      }
+    }
+  }
+
+  // .footer__catalogg
+
+  &__catalogg {
+    grid-row: 1 / -1;
+    grid-column: 3 / 4;
+    .catalog_head {
+      h5 {
+        @include size_weight(16px, 700);
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: $tx-text_B8;
+      }
+    }
+    .catalog_body {
+      margin-top: 20px;
+      @include display_flex(flex, none, none, 8px);
+      flex-direction: column;
+      a {
+        @include size_weight(15px, 400);
+        line-height: 20px;
+        color: $tx-white;
+      }
+    }
+  }
+
+  // .footer__Feedback
+
+  &__Feedback {
+    grid-row: 1 / 2;
+    grid-column: 4 / 5;
+    text-align: right;
+    button {
+      @include Btn_White;
+
+      span {
+        color: $tx-purple;
+        @include size_weight(15px, 700);
+        line-height: 20px;
+      }
+    }
+  }
+
+  // .footer__privacy-policy
+
+  &__privacy-policy {
+    @include size_weight(15px, 400);
+    @include display_flex(flex, flex-end, flex-end, none);
+    grid-row: 3 / 4;
+    grid-column: 4 / 5;
+    line-height: 20px;
+    color: $tx-text_B8;
+    span {
+      text-align: right;
+      a {
+        display: inline-block;
+      }
+      a:hover {
+        transition: 0.2s;
+        color: $tx-white;
+      }
+    }
+  }
 }
