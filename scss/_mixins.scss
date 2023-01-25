@@ -48,24 +48,24 @@
   line-height: 20px;
 }
 
-@mixin Btn_arrow {
-  border: 0.0625rem solid $header-upBG;
-  background-color: $header-upBG;
-  height: 0rem;
-  width: 1.875rem;
-}
+// @mixin Btn_arrow {
+//   border: 0.0625rem solid $header-upBG;
+//   background-color: $header-upBG;
+//   height: 0rem;
+//   width: 1.875rem;
+// }
 
-@mixin Btn_arrow_rotate {
-  position: relative;
-  left: 1.25rem;
-  top: -0.2853rem;
-  display: block;
-  width: 0.4375rem;
-  height: 0.4375rem;
-  border-top: 0.125rem solid $header-upBG;
-  border-left: 0.125rem solid $header-upBG;
-  transform: rotate(135deg);
-}
+// @mixin Btn_arrow_rotate {
+//   position: relative;
+//   left: 1.25rem;
+//   top: -0.2853rem;
+//   display: block;
+//   width: 0.4375rem;
+//   height: 0.4375rem;
+//   border-top: 0.125rem solid $header-upBG;
+//   border-left: 0.125rem solid $header-upBG;
+//   transform: rotate(135deg);
+// }
 
 //Display Flex
 @mixin display_flex($display, $justify-content, $align-items, $gap) {

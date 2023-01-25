@@ -139,11 +139,7 @@
   // .categories__box
 
   &__box {
-    @include display_grid(
-      grid,
-      10.625rem 10.625rem / 23.75rem 23.75rem 23.75rem,
-      1.25rem
-    );
+    @include display_grid(grid, 10.625rem 10.625rem / repeat(3, 1fr), 1.25rem);
     .asic {
       grid-column: 1 / 2;
       grid-row: 1 / 2;
@@ -177,7 +173,7 @@
     left: 0;
     top: 0;
     overflow: hidden;
-    @include wh(380px, 170px);
+    @include wh(100%, 170px);
     border-radius: 0.625rem;
     background-color: $header-downBG;
 
@@ -194,34 +190,38 @@
       position: relative;
       bottom: 225px;
       left: 0;
-
       @include display_flex(flex, none, center, 20px);
-      img {
+      .blog__product {
+        width: 50%;
+      }
+      .product {
         object-fit: cover;
         padding: 20px 0px 20px 35px;
       }
       .text {
+        width: 50%;
+        flex: 1 1 auto;
         p {
           @include wh(153px, 70px);
           @include size_weight(18px, 600);
           color: $tx-items;
-          position: relative;
-          top: -10px;
-          left: 0;
+          margin-top: 10px;
         }
         .btn__catalog {
-          position: relative;
-          top: 1.125rem;
-          right: 0px;
           @include Btn_gradient_catalog;
           @include display_flex(flex, none, center, 0.625rem);
-          .after__arrow {
-            @include Btn_arrow;
-          }
-          .after__arrow::after {
-            content: "";
-            @include Btn_arrow_rotate;
-          }
+          // .after__arrow {
+          //   @include Btn_arrow;
+          // }
+          // .after__arrow::after {
+          //   content: "";
+          //   @include Btn_arrow_rotate;
+          // }
+        }
+        .btn__catalog::after {
+          content: "";
+          background: url("/img/Arrow purple.png") center no-repeat;
+          padding: 30px 15px 30px 15px;
         }
       }
     }
@@ -306,11 +306,20 @@
         line-height: 3.0625rem;
         text-transform: uppercase;
         color: $h2_color_wt;
+        position: relative;
+        z-index: 15;
       }
     }
-    img {
+    .advan__gpu {
       position: relative;
-      bottom: 200px;
+      bottom: 100px;
+      z-index: 10;
+    }
+    .shadow_gpu {
+      position: relative;
+      bottom: 190px;
+      left: 70px;
+      z-index: 3;
     }
   }
   &__left,
@@ -320,7 +329,7 @@
   // .container__right
 
   &__right {
-    @include display_grid(grid, 1fr / 1fr 1fr, 55px);
+    @include display_grid(grid, 104px 104px/ 1fr 1fr, 55px);
     .right__item {
       .img__circle {
         @include wh(60px, 60px);
@@ -397,6 +406,7 @@
     padding: 0.9375rem 0.9375rem 0rem 0.9375rem;
     @include display_flex(flex, space-between, center, none);
     img {
+      cursor: pointer;
     }
     .hits_bg {
     }
@@ -444,6 +454,9 @@
       color: $sale_price;
       text-decoration: line-through;
     }
+    img {
+      cursor: pointer;
+    }
   }
   .btn {
     position: relative;
@@ -483,7 +496,7 @@
 }
 .rowtop {
   display: grid;
-  grid-template: 3.125rem 10.3125rem / 1fr 28.75rem;
+  grid-template: 3.5rem 10.3125rem / 1fr 29.75rem;
   column-gap: 4.6875rem;
   row-gap: 2.5rem;
   // .row__header
@@ -514,8 +527,9 @@
   &__logo {
     grid-column: 2 / 3;
     grid-row: 1 / -1;
+    @include wh(100%, 100%);
     img {
-      @include wh_img(460px, 270px);
+      @include wh(100%, 100%);
     }
   }
 }
@@ -623,6 +637,15 @@
       line-height: 135%;
       color: $tx-f3;
     }
+    input:read-write {
+      padding-left: 20px;
+      @include size_weight(14px, 400);
+      line-height: 135%;
+      color: $tx-white;
+    }
+    :invalid {
+      border: 1px solid #ff1414;
+    }
     button {
       @include Btn_white_submit;
     }
@@ -638,8 +661,27 @@
       line-height: 19px;
       color: $tx-f3;
     }
+    label::before {
+      content: "";
+      @include wh(14px, 14px);
+      margin-right: 10px;
+      display: inline-block;
+      background-color: rgba(255, 255, 255, 0);
+      border: 1px solid #ffffff;
+      border-radius: 2px;
+    }
+    input:checked ~ label::before {
+      border: 1.5px solid #18154b;
+      border-radius: 2px;
+      background-color: $White_btn;
+      background: url("/img/Checkbox.png");
+    }
     .personal-data {
       text-decoration: underline;
+    }
+    input {
+      position: absolute;
+      opacity: 0;
     }
   }
 }
@@ -653,7 +695,7 @@
 
   &__container {
     display: grid;
-    grid-template: 1fr / 500px 800px;
+    grid-template: 365px / 500px 800px;
   }
 
   // .contacts__addres
@@ -739,17 +781,14 @@
     grid-row: 1 / 2;
     display: flex;
     .nav__map {
-      position: relative;
-      left: 15px;
-      bottom: 50px;
-      @include wh(100%, 365px);
+      @include wh(100%, 100%);
       z-index: 2;
     }
     .marker {
       @include wh_img(22px, 32px);
       position: relative;
-      left: 430px;
-      top: 100px;
+      left: 435px;
+      top: 110px;
       z-index: 3;
     }
   }
