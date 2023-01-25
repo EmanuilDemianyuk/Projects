@@ -3,12 +3,14 @@
 @mixin wh($width, $height) {
   width: $width;
   height: $height;
+  max-width: 100%;
 }
 
 @mixin wh_img($width, $height) {
   width: $width;
   height: $height;
   object-fit: cover;
+  max-width: 100%;
 }
 
 //Batton
