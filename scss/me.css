@@ -230,6 +230,7 @@ li {
 }
 
 .board__right {
+  flex: 0 1 860px;
   width: 48.75rem;
   height: 27.5rem;
   background: linear-gradient(73.56deg, #0d748b -10.13%, #1a0b73 75.49%), #ffffff;
@@ -315,7 +316,9 @@ li {
   height: 12px;
 }
 .board__left {
-  flex: 1 1 auto;
+  position: relative;
+  z-index: 100;
+  flex: 1 1 380px;
   width: 380px;
   height: 440px;
   background: linear-gradient(0deg, #1a0b73, #1a0b73), radial-gradient(106.32% 141.75% at -6.32% -2.5%, #42e8e0 0%, #40ddda 0%, #3aaec0 9.21%, #3484a9 17.3%, #2f6195 25.73%, #2b4486 34.58%, #282e79 44%, #261e71 54.25%, #24156c 65.94%, #24126a 82.26%);
@@ -323,7 +326,7 @@ li {
   border-radius: 10px;
 }
 .board__left .left__container {
-  padding: 40px 30px 0px 40px;
+  padding: 40px 0px 0px 50px;
 }
 .board__left .left__header h3 {
   font-size: 28px;
@@ -356,6 +359,18 @@ li {
   height: 46px;
   line-height: 125%;
   color: white;
+}
+.board__left .ellipse-1,
+.board__left .ellipse-2 {
+  width: 365px;
+  height: 365px;
+  background: #3bb9c6;
+  filter: blur(73px);
+  z-index: 12;
+  display: block;
+}
+.board__left .ellipse-1 {
+  position: absolute;
 }
 .board__left .bottom_box {
   padding-top: 20px;
