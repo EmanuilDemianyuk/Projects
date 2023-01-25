@@ -316,10 +316,75 @@ li {
 }
 .board__left {
   flex: 1 1 auto;
-}
-.board__left img {
-  width: 100%;
+  width: 380px;
   height: 440px;
+  background: linear-gradient(0deg, #1a0b73, #1a0b73), radial-gradient(106.32% 141.75% at -6.32% -2.5%, #42e8e0 0%, #40ddda 0%, #3aaec0 9.21%, #3484a9 17.3%, #2f6195 25.73%, #2b4486 34.58%, #282e79 44%, #261e71 54.25%, #24156c 65.94%, #24126a 82.26%);
+  box-shadow: 0px 4px 20px rgba(0, 7, 94, 0.1);
+  border-radius: 10px;
+}
+.board__left .left__container {
+  padding: 40px 30px 0px 40px;
+}
+.board__left .left__header h3 {
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 38px;
+  text-transform: uppercase;
+  color: white;
+  width: 231px;
+  height: 76px;
+}
+.board__left .left__text {
+  display: flex;
+  align-items: center;
+  justify-content: none;
+  gap: 20px;
+}
+.board__left .left__text span {
+  font-size: 56px;
+  font-weight: 700;
+  width: 145px;
+  height: 76px;
+  line-height: 76px;
+  text-transform: uppercase;
+  color: white;
+}
+.board__left .left__text p {
+  font-size: 18px;
+  font-weight: 600;
+  width: 138px;
+  height: 46px;
+  line-height: 125%;
+  color: white;
+}
+.board__left .bottom_box {
+  padding-top: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: none;
+}
+.board__left .left__bitc {
+  position: relative;
+  right: 35px;
+  top: 0px;
+}
+.board__left .left_btn .btn__catalog {
+  position: relative;
+  right: 30px;
+  line-height: 22px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: none;
+  gap: 0.625rem;
+}
+.board__left .left_btn .btn__catalog::after {
+  content: "";
+  background: url("/img/Arrow.png") center no-repeat;
+  padding: 30px 15px 30px 15px;
 }
 
 .items {

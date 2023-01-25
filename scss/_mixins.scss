@@ -37,6 +37,11 @@
   color: $header-upBG;
   @include size_weight(1rem, 700);
 }
+@mixin Btn_white_catalog {
+  line-height: 22px;
+  color: $White_btn;
+  @include size_weight(1rem, 700);
+}
 
 @mixin Btn_white_submit {
   width: 240px;

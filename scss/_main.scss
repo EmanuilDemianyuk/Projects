@@ -100,8 +100,72 @@
 
   &__left {
     flex: 1 1 auto;
-    img {
-      @include wh(100%, 440px);
+    @include wh(380px, 440px);
+    background: linear-gradient(0deg, #1a0b73, #1a0b73),
+      radial-gradient(
+        106.32% 141.75% at -6.32% -2.5%,
+        #42e8e0 0%,
+        #40ddda 0%,
+        #3aaec0 9.21%,
+        #3484a9 17.3%,
+        #2f6195 25.73%,
+        #2b4486 34.58%,
+        #282e79 44%,
+        #261e71 54.25%,
+        #24156c 65.94%,
+        #24126a 82.26%
+      );
+    box-shadow: 0px 4px 20px rgba(0, 7, 94, 0.1);
+    border-radius: 10px;
+    .left__container {
+      padding: 40px 30px 0px 40px;
+    }
+    .left__header {
+      h3 {
+        @include size_weight(28px, 800);
+        line-height: 38px;
+        text-transform: uppercase;
+        color: $tx-white;
+        @include wh(231px, 76px);
+      }
+    }
+    .left__text {
+      @include display_flex(flex, none, center, 20px);
+      span {
+        @include size_weight(56px, 700);
+        @include wh(145px, 76px);
+        line-height: 76px;
+        text-transform: uppercase;
+        color: $tx-white;
+      }
+      p {
+        @include size_weight(18px, 600);
+        @include wh(138px, 46px);
+        line-height: 125%;
+        color: $tx-white;
+      }
+    }
+    .bottom_box {
+      padding-top: 20px;
+      @include display_flex(flex, flex-start, flex-end, none);
+    }
+    .left__bitc {
+      position: relative;
+      right: 35px;
+      top: 0px;
+    }
+    .left_btn {
+      .btn__catalog {
+        position: relative;
+        right: 30px;
+        @include Btn_white_catalog;
+        @include display_flex(flex, none, center, 0.625rem);
+      }
+      .btn__catalog::after {
+        content: "";
+        background: url("/img/Arrow.png") center no-repeat;
+        padding: 30px 15px 30px 15px;
+      }
     }
   }
 }
