@@ -51,11 +51,16 @@ li {
   gap: none;
   height: 2.875rem;
 }
+@media (max-width: 991px) {
+  .header__up {
+    display: none;
+  }
+}
 .header__contacts {
   display: flex;
   align-items: none;
   justify-content: none;
-  gap: 2.75rem;
+  gap: 44px;
 }
 .header__icon {
   display: flex;
@@ -110,6 +115,34 @@ li {
   justify-content: space-between;
   gap: none;
 }
+.header__menu .menu__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: none;
+  margin-right: 58px;
+}
+@media (max-width: 1199px) {
+  .header__menu .menu__logo {
+    margin-right: 15px;
+  }
+}
+.header__menu .menu__btn button {
+  color: white;
+  width: 160px;
+  height: 40px;
+  background: linear-gradient(73.56deg, #0d748b -10.13%, #1a0b73 75.49%), #ffffff;
+  border-radius: 50px;
+  border: none;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  line-height: 1.125rem;
+}
+@media (max-width: 991px) {
+  .header__menu .menu__btn button {
+    display: none;
+  }
+}
 
 .menu__list {
   display: flex;
@@ -122,9 +155,24 @@ li {
   font-size: 1rem;
   line-height: 1.375rem;
   color: rgb(48, 50, 57);
+  margin-right: 47px;
+}
+@media (max-width: 1399px) {
+  .menu__list {
+    display: flex;
+    align-items: center;
+    justify-content: none;
+    gap: 10px;
+    margin-right: 15px;
+  }
+}
+@media (max-width: 991px) {
+  .menu__list {
+    display: none;
+  }
 }
 .menu__items {
-  flex: 0;
+  flex: 1 1 auto;
 }
 .menu__items select {
   outline: inherit;
@@ -141,27 +189,19 @@ li {
   transition: 0.2s;
   color: rgba(48, 50, 57, 0.7);
 }
-.menu__items button {
-  color: white;
-  width: 160px;
-  height: 40px;
-  background: linear-gradient(73.56deg, #0d748b -10.13%, #1a0b73 75.49%), #ffffff;
-  border-radius: 50px;
-  border: none;
-  font-size: 0.8125rem;
-  font-weight: 700;
-  line-height: 1.125rem;
-}
 .menu__items:hover {
   color: rgba(48, 50, 57, 0.7);
   transition: 0.2s;
 }
 
 .menu__icon {
+  position: relative;
   display: flex;
-  align-items: none;
-  justify-content: none;
+  align-items: center;
+  justify-content: flex-end;
   gap: 0.625rem;
+  width: 100%;
+  height: inherit;
 }
 .menu__icon .elements_1,
 .menu__icon .elements_2 {
@@ -181,41 +221,80 @@ li {
   color: white;
 }
 .menu__icon .elements_1 {
-  position: relative;
-  bottom: 0.7em;
-  left: 13.5em;
+  position: absolute;
+  bottom: 46px;
+  right: 45px;
+}
+@media (max-width: 991px) {
+  .menu__icon .elements_1 {
+    bottom: 46px;
+    right: 90px;
+  }
 }
 .menu__icon .elements_2 {
+  position: absolute;
+  bottom: 46px;
+  right: -8px;
+}
+@media (max-width: 991px) {
+  .menu__icon .elements_2 {
+    bottom: 46px;
+    right: 40px;
+  }
+}
+.menu__icon .icon__search img {
+  width: 2.5rem;
+  height: 2.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 991px) {
+  .menu__icon .icon__search {
+    display: none;
+  }
+}
+.menu__icon .icon__favorites img {
+  width: 2.5rem;
+  height: 2.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.menu__icon .icon__basket img {
+  width: 2.5rem;
+  height: 2.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.menu__icon .menu-Btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: none;
   position: relative;
-  bottom: 0.7em;
-  left: 15.5em;
+  z-index: 2;
+  overflow: hidden;
 }
-.menu__icon__search {
-  flex: 0;
+@media (max-width: 991px) {
+  .menu__icon .menu-Btn {
+    display: inherit;
+  }
 }
-.menu__icon__search img {
-  width: 2.5rem;
-  height: 2.5rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+.menu__icon .menu-Btn span {
+  width: 14.77px;
+  height: 1.5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #e90e0e;
+  transition: all 0.5s;
 }
-.menu__icon__favorites {
-  flex: 0;
+.menu__icon .menu-Btn span:nth-of-type(2) {
+  top: calc(50% - 5px);
 }
-.menu__icon__favorites img {
-  width: 2.5rem;
-  height: 2.5rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.menu__icon__basket {
-  flex: 0;
-}
-.menu__icon__basket img {
-  width: 2.5rem;
-  height: 2.5rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+.menu__icon .menu-Btn span:nth-of-type(3) {
+  top: calc(50% + 5px);
 }
 
 .main {
@@ -361,22 +440,6 @@ li {
   height: 46px;
   line-height: 125%;
   color: white;
-}
-.board__left .ellipse-1,
-.board__left .ellipse-2 {
-  width: 365px;
-  height: 365px;
-  background: #3bb9c6;
-  filter: blur(73px);
-  z-index: auto;
-  opacity: 0.6;
-  display: block;
-  border-radius: 50%;
-}
-.board__left .ellipse-1 {
-  position: absolute;
-  bottom: 300px;
-  right: 200px;
 }
 .board__left .bottom_box {
   padding-top: 20px;

@@ -148,23 +148,23 @@
         color: $tx-white;
       }
     }
-    .ellipse-1,
-    .ellipse-2 {
-      @include wh(365px, 365px);
-      background: #3bb9c6;
-      filter: blur(73px);
-      z-index: auto;
-      opacity: 0.6;
-      display: block;
-      border-radius: 50%;
-    }
-    .ellipse-1 {
-      position: absolute;
-      bottom: 300px;
-      right: 200px;
-    }
-    .ellipse-2 {
-    }
+    // .ellipse-1,
+    // .ellipse-2 {
+    //   @include wh(365px, 365px);
+    //   background: #3bb9c6;
+    //   filter: blur(73px);
+    //   z-index: auto;
+    //   opacity: 0.6;
+    //   display: block;
+    //   border-radius: 50%;
+    // }
+    // .ellipse-1 {
+    //   position: absolute;
+    //   bottom: 300px;
+    //   right: 200px;
+    // }
+    // .ellipse-2 {
+    // }
     .bottom_box {
       padding-top: 20px;
       @include display_flex(flex, flex-start, flex-end, none);

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/scss/me.css" />
     <link href="/bootstrap/bootstrap-grid.css" rel="stylesheet" />
     <script defer src="/js/bootstrap.bundle.min.js.map"></script>
+    <script defer src="/js/main.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -39,13 +40,13 @@
         </div>
         <div class="header__white">
           <div class="header__down container">
-            <nav class="header__menu">
-              <ul class="menu__list">
-                <li class="menu__items">
+            <nav class="header__menu container-fluid">
+                <span class="menu__logo">
                   <a href="#"
                     ><img src="/img/MEIN MINER.png" alt="Main_logo"
                   /></a>
-                </li>
+                </span>
+              <ul class="menu__list">
                 <li class="menu__items">
                   <a href="#">
                     <select name="catalog" id="catalog">
@@ -59,24 +60,28 @@
                 <li class="menu__items"><a href="#">Калькулятор</a></li>
                 <li class="menu__items"><a href="#">Доставка</a></li>
                 <li class="menu__items"><a href="#">Отзывы</a></li>
-                <li class="menu__items">
-                  <a href="#"
-                    ><button class="gradient__btn">Заказать звонок</button></a
-                  >
-                </li>
               </ul>
+              <span class="menu__btn">
+                <button class="gradient__btn" type="submit">Заказать звонок</button>
+              </span>
             </nav>
             <div class="menu__icon">
-              <span class="elements_1">6</span>
-              <span class="elements_2">3</span>
               <div class="icon__search">
-                <a href="#"><img src="/img/поиск.png" alt="logo" /></a>
+                <a href="#"><img src="/img/поиск.png" alt="logo"/></a>
+                
               </div>
               <div class="icon__favorites">
-                <a href="#"><img src="/img/избранное.png" alt="logo" /></a>
+                <img src="/img/избранное.png" alt="logo"/>
+                <span class="elements_1">6</span>
               </div>
               <div class="icon__basket">
                 <a href="#"><img src="/img/busket.png" alt="logo" /></a>
+                <span class="elements_2">3</span>
+              </div>
+              <div class="menu-Btn">
+                <span></span>
+		            <span></span>
+		            <span></span>
               </div>
             </div>
           </div>
