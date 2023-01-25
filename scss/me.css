@@ -37,6 +37,8 @@ li {
   background-color: #f5f5f5;
   font-family: "Nunito Sans";
   font-style: normal;
+  position: relative;
+  z-index: 100;
 }
 
 .header__blue {
@@ -366,11 +368,15 @@ li {
   height: 365px;
   background: #3bb9c6;
   filter: blur(73px);
-  z-index: 12;
+  z-index: auto;
+  opacity: 0.6;
   display: block;
+  border-radius: 50%;
 }
 .board__left .ellipse-1 {
   position: absolute;
+  bottom: 300px;
+  right: 200px;
 }
 .board__left .bottom_box {
   padding-top: 20px;
