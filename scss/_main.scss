@@ -7,7 +7,7 @@
   &__billboard {
     margin: 20px 0px;
     @include display_flex(flex, space-between, center, 1.25rem);
-    @include wh(100%, 27.5rem);
+    @include wh(100%, inherit);
   }
 }
 

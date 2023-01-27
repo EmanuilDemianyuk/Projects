@@ -192,6 +192,7 @@
 
   .icon__favorites {
     img {
+      cursor: pointer;
       @include wh_img(2.5rem, 2.5rem);
     }
   }
@@ -213,13 +214,17 @@
     }
   }
   .menu-Btn {
+    @include wh(36px, 36px);
+    background: #f0f5fb;
+    border-radius: 30px;
+    cursor: pointer;
     span {
       @include wh(14.77px, 1.5px);
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      background-color: #e90e0e;
+      background-color: #1a0b73;
       transition: all 0.5s;
     }
   }
